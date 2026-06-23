@@ -89,7 +89,7 @@ Verify Same Account Validation
     ELSE
         Log    Transfer was rejected by website which is correct
     END
-    Log To Console    Log    BUG DFT-01: Same account transfer was allowed by application    WARN
+    Log To Console   BUG DFT-01: Same account transfer was allowed by application
 
 
 

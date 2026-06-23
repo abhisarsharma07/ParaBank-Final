@@ -18,11 +18,11 @@ Transfer Negative Amount
      ${status}=  Run Keyword And Return Status
     ...  Page Should Not Contain    Transfer Complete!
     IF    ${status} == False
-        Log    BUG DFT-02: Negative amount transfer allowed — Known Defect    WARN
+        Log    BUG DFT-02: Negative amount transfer allowed — Known Defect
     ELSE
         Log    Transfer was correctly rejected    INFO
     END
-    Log To Console    BUG DFT-02: Known defect — negative transfer not blocked    WARN
+    Log To Console    BUG DFT-02: Known defect — negative transfer not blocked      WARN
 
 Transfer With Non Numeric Amount
     Click Link    Transfer Funds
@@ -49,11 +49,11 @@ Transfer Amount Greater Than Balance
     ${status}=    Run Keyword And Return Status
     ...    Page Should Not Contain    Transfer Complete
     IF    ${status} == False
-        Log    BUG DFT-03: Insufficient balance transfer allowed — Known Defect    WARN
+        Log    BUG DFT-03: Insufficient balance transfer allowed — Known Defect
     ELSE
         Log    Transfer was correctly rejected    INFO
     END
-    Log To Console    BUG DFT-03: Insufficient balance transfer allowed — Known Defect    WARN
+    Log To Console    BUG DFT-03: Insufficient balance transfer allowed — Known Defect      WARN
 
 Validate Invalid Account ID
     Create Session    ParaBank    ${BASE_API_URL}

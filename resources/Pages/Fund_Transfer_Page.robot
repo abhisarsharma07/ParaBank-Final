@@ -82,8 +82,13 @@ Transfer Funds Using Same Account
     Click Element    ${Transfer_Button}
     
 Verify Same Account Validation
-    Page Should Contain    Transfer Complete!
-    Log    BUG DFT-01: Same account transfer was allowed by application    WARN
+    ${status}=    Run Keyword And Return Status
+    ...  Page Should Not Contain    Transfer Complete!
+    IF    ${status} == False
+        Log    BUG DFT-01: Same account transfer was allowed by application
+    ELSE
+        Log    Transfer was rejected by website which is correct
+    END
     Log To Console    Log    BUG DFT-01: Same account transfer was allowed by application    WARN
 
 

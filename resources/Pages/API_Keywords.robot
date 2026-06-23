@@ -113,7 +113,7 @@ Validate Account Balance Via API
       Create Session    ParaBank  ${Base_Url_API}    verify=False
       ${headers}=    Create Dictionary  Accept=${ACCEPT_HEADER}
       ${response}=    GET On Session    ParaBank    /accounts/${NEW_ACCOUNT_ID}   headers=${headers}
-      Log To Console    Status Code   : ${response.status_code}
+      Log To Console    Status Code : ${response.status_code}
       Log To Console    Response Body : ${response.text}
       Should Be Equal As Integers    ${response.status_code}    200
       ${account}=    Set Variable    ${response.json()}

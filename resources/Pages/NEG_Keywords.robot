@@ -22,7 +22,7 @@ Transfer Negative Amount
     ELSE
         Log    Transfer was correctly rejected    INFO
     END
-    Log To Console    BUG DFT-02: Known defect — negative transfer not blocked      WARN
+    Log To Console    BUG DFT-02: Known defect — negative transfer not blocked
 
 Transfer With Non Numeric Amount
     Click Link    Transfer Funds
@@ -53,7 +53,7 @@ Transfer Amount Greater Than Balance
     ELSE
         Log    Transfer was correctly rejected    INFO
     END
-    Log To Console    BUG DFT-03: Insufficient balance transfer allowed — Known Defect      WARN
+    Log To Console    BUG DFT-03: Insufficient balance transfer allowed — Known Defect
 
 Validate Invalid Account ID
     Create Session    ParaBank    ${BASE_API_URL}

@@ -14,7 +14,7 @@ Get Customer ID From Login
     ${customer_id}=  Set Variable   ${response.json()}[id]
     ${customer_id}=    Convert To String    ${customer_id}
     Set Suite Variable    ${CUSTOMER_ID}    ${customer_id}
-    Log To Console    Customer ID Found:    ${CUSTOMER_ID}
+    Log To Console    Customer ID Found: ${CUSTOMER_ID}
 
 Get Accounts List By Customer Id
 ## It will give First Account ID
@@ -50,9 +50,9 @@ Create New Account via API
      Set Suite Variable    ${CREATED_BALANCE}    ${new_account_bal}
      Log To Console    =====================================
      Log To Console    New Account Created Successfully!
-     Log To Console    Account ID   : ${NEW_ACCOUNT_ID}
+     Log To Console    Account ID : ${NEW_ACCOUNT_ID}
      Log To Console    Account Type : ${new_account_type}
-     Log To Console    Balance      : ${new_account_bal}
+     Log To Console    Balance : ${new_account_bal}
      Log To Console    =====================================
      RETURN    ${new_account_id}
 
@@ -64,7 +64,7 @@ Get Account ID via API
     ${last_account}=    Get From List    ${accounts}    -1
     ${new_account_id}=    Convert To String    ${last_account}[id]
     Set Suite Variable    ${ACCOUNT_ID}    ${new_account_id}
-    Log To Console    Latest Account ID: ${NEW_ACCOUNT_ID}
+    Log To Console    Latest Account ID : ${NEW_ACCOUNT_ID}
 
 Validate New Account Exists In API
     Create Session    ParaBank    ${Base_Url_API}   verify=False
@@ -73,9 +73,9 @@ Validate New Account Exists In API
     Log To Console    Response Status Code : ${response.status_code}
     Should Be Equal As Integers    ${response.status_code}    ${EXPECTED_STATUS}
     ${response_body}=   Set Variable    ${response.text}
-    Log To Console    Response      ${response_body}
+    Log To Console    Response ${response_body}
     Should Contain    ${response_body}    ${ACCOUNT_ID}
-    Log To Console  Account ID: ${ACCOUNT_ID} found successfully in API response.
+    Log To Console  Account ID : ${ACCOUNT_ID} found successfully in API response.
 
 Validate API Response Status And Structure
     Create Session    ParaBank  ${Base_URL_API}    verify=False
@@ -125,10 +125,10 @@ Validate Account Balance Via API
       ${acc_id}=      Convert To String    ${account}[id]
       ${acc_type}=    Set Variable         ${account}[type]
       ${acc_bal}=     Convert To String    ${account}[balance]
-     Log To Console    Account ID      : ${acc_id}
-     Log To Console    Account Type    : ${acc_type}
-     Log To Console    Balance         : ${acc_bal}
-     Log To Console    Expected        : ${CREATED_BALANCE}
+     Log To Console    Account ID : ${acc_id}
+     Log To Console    Account Type : ${acc_type}
+     Log To Console    Balance : ${acc_bal}
+     Log To Console    Expected : ${CREATED_BALANCE}
 
 
 Validate Balance Update After Transfer

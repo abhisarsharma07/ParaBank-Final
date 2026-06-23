@@ -1,11 +1,13 @@
 *** Settings ***
 Resource    ../../resources/common_resources.robot
 Resource    ../../resources/Pages/E2E_Keywords.robot
+Resource    ../../resources/Pages/Open_Account_Page.robot
 Suite Setup     Launch Application
 Suite Teardown  Close Application
 *** Test Cases ***
 TC-E2E-02 Transfer Funds Via UI And Validate Via API
     Ensure User Is Logged In
+    Create New Account
     ${amount}=    Set Variable    50
     ${from_account}    ${to_account}    ${before_from}    ${before_to}=    Perform Transfer     ${amount}
     Log To Console  From Account: ${from_account}

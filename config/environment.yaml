@@ -1,0 +1,5 @@
+qa:
+  base_url: "https://parabank.parasoft.com/parabank"
+  api_url: "https://parabank.parasoft.com/parabank/services/bank"
+  username: "abhisar"
+  password: "1234"

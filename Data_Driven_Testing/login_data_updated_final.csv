@@ -1,0 +1,11 @@
+*** Test Cases ***,${Firstname},${Lastname},${Address},${City},${State},${Zipcode},${Phno},${SSN},${Username},${Password},${Confirm}
+TC001,Ram,Sharma,12 Vaishali Nagar,Jaipur,Rajasthan,302101,9876543210,123456,ram.sharma1,Ram@123,Ram@123
+TC002,Shyam,Verma,45 Hiran Magri,Udaipur,Rajasthan,313001,9123456781,567890,shyam.verma2,Shyam@123,Shyam@123
+TC003,Mohan,Gupta,78 Ratanada,Jodhpur,Rajasthan,342001,9234567812,678901,mohan.gupta3,Mohan@123,Mohan@123
+TC004,Sohan,Meena,21 Talwandi,Kota,Rajasthan,324005,9345678123,789012,sohan.meena4,Sohan@123,Sohan@123
+TC005,Geeta,Joshi,34 Civil Lines,Ajmer,Rajasthan,305001,9456781234,890123,geeta.joshi5,Geeta@123,Geeta@123
+TC006,Sita,Sharma,56 Scheme No 8,Alwar,Rajasthan,301001,9567812345,890123,sita.sharma6,Sita@123,Sita@123
+TC007,Radha,Singh,89 Pawanpuri,Bikaner,Rajasthan,334001,9678123456,890123,radha.singh7,Radha@123,Radha@123
+TC008,Krishna,Yadav,17 Circular Road,Bharatpur,Rajasthan,321001,9781234567,890123,krishna.yadav8,Krishna@123,Krishna@123
+TC009,Arjun,Choudhary,65 Piprali Road,Sikar,Rajasthan,332001,9892345678,890123,arjun.choudhary9,Arjun@123,Arjun@123
+TC010,Kavita,Mishra,90 Old Bus Stand,Tonk,Rajasthan,304001,9912345678,890123,kavita.mishra10,Kavita@123,Kavita@123

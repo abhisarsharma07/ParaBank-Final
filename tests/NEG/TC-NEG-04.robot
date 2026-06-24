@@ -5,6 +5,7 @@ Resource    ../../resources/Pages/Open_Account_Page.robot
 Suite Setup       Launch Application
 Suite Teardown    Close Application
 *** Test Cases ***
-TC-NEG-04: API Validation for Invalid Account ID
+TC-NEG-01: Fund Transfer With Negative Amount
     Ensure User Is Logged In
-    Validate Invalid Account ID
+    Create New Account
+    Transfer Negative Amount

@@ -7,7 +7,7 @@ Resource    ../../variables/Neg_Variables.robot
 Transfer Negative Amount
     Click Link    Transfer Funds
     Wait Until Element Is Visible    ${AMOUNT_FIELD}
-    Input Text    ${AMOUNT_FIELD}    -50
+    Input Text    ${AMOUNT_FIELD}    -10
     Sleep    2s
     Wait Until Element Is Visible    ${FROM_ACCOUNT_DROPDOWN}
     Sleep    2s

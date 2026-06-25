@@ -7,6 +7,7 @@ Resource    ../../variables/E2E_Variables.robot
 Create Account And Capture Details
     Click Link    Open New Account
     Wait Until Element Is Visible   ${ACCOUNT_TYPE_DROPDOWN}
+    Sleep    2s
     Select From List By Label   ${ACCOUNT_TYPE_DROPDOWN}    SAVINGS
     Click Element   ${OPEN_ACCOUNT_BUTTON}
     Wait Until Element Is Visible   ${NEW_ACCOUNT_ID}

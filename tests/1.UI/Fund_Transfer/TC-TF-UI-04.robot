@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../../../resources/common_resources.robot
-Resource    ../../../resources/Pages/Fund_Transfer_Page.robot
+Resource    ../../../resources/Pages/UI_Fund_Transfer_Page_Keywords.robot
 
 Suite Setup       Launch Application
 Suite Teardown    Close Application

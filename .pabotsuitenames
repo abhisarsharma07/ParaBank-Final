@@ -1,26 +1,26 @@
-datasources:01512ca19d0e1c9d31e66a73c587980ad5067bbe
+datasources:6e4de51134350b1d75d2db736f17ecf7030683b3
 commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
 suitesfrom:no-suites-from-option
-file:7f43efd6870efd9be76c49df4f43c9921ec23cf2
---suite Tests.API.TC-API-01
---suite Tests.API.TC-API-02
---suite Tests.API.TC-API-03
---suite Tests.API.TC-API-04
---suite Tests.API.TC-API-05
---suite Tests.API.TC-API-06
---suite Tests.API.TC-API-07
---suite Tests.E2E.TC-E2E-01
---suite Tests.E2E.TC-E2E-02
---suite Tests.NEG.TC-NEG-01
---suite Tests.NEG.TC-NEG-02
---suite Tests.NEG.TC-NEG-03
---suite Tests.NEG.TC-NEG-04
---suite Tests.UI.Account Creation.TC-AC-UI-01
---suite Tests.UI.Account Creation.TC-AC-UI-02
---suite Tests.UI.Account Creation.TC-AC-UI-03
---suite Tests.UI.Account Creation.TC-AC-UI-04
---suite Tests.UI.Account Creation.TC-AC-UI-05
---suite Tests.UI.Fund Transfer.TC-TF-UI-01
---suite Tests.UI.Fund Transfer.TC-TF-UI-02
---suite Tests.UI.Fund Transfer.TC-TF-UI-03
---suite Tests.UI.Fund Transfer.TC-TF-UI-04
+file:c051f72dccf10f46885f040cd93a00b2dc14bfab
+--suite Tests.1.UI.Account Creation.TC-AC-UI-01
+--suite Tests.1.UI.Account Creation.TC-AC-UI-02
+--suite Tests.1.UI.Account Creation.TC-AC-UI-03
+--suite Tests.1.UI.Account Creation.TC-AC-UI-04
+--suite Tests.1.UI.Account Creation.TC-AC-UI-05
+--suite Tests.1.UI.Fund Transfer.TC-TF-UI-01
+--suite Tests.1.UI.Fund Transfer.TC-TF-UI-02
+--suite Tests.1.UI.Fund Transfer.TC-TF-UI-03
+--suite Tests.1.UI.Fund Transfer.TC-TF-UI-04
+--suite Tests.2.API.TC-API-01
+--suite Tests.2.API.TC-API-02
+--suite Tests.2.API.TC-API-03
+--suite Tests.2.API.TC-API-04
+--suite Tests.2.API.TC-API-05
+--suite Tests.2.API.TC-API-06
+--suite Tests.2.API.TC-API-07
+--suite Tests.3.NEG.TC-NEG-01
+--suite Tests.3.NEG.TC-NEG-02
+--suite Tests.3.NEG.TC-NEG-03
+--suite Tests.3.NEG.TC-NEG-04
+--suite Tests.4.E2E.TC-E2E-01
+--suite Tests.4.E2E.TC-E2E-02

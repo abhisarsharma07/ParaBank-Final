@@ -48,12 +48,10 @@ Create New Account via API
      ${new_account_bal}=     Convert To String    ${new_account}[balance]
      Set Suite Variable    ${NEW_ACCOUNT_ID}    ${new_account_id}
      Set Suite Variable    ${CREATED_BALANCE}    ${new_account_bal}
-     Log To Console    =====================================
      Log To Console    New Account Created Successfully!
      Log To Console    Account ID : ${NEW_ACCOUNT_ID}
      Log To Console    Account Type : ${new_account_type}
      Log To Console    Balance : ${new_account_bal}
-     Log To Console    =====================================
      RETURN    ${new_account_id}
 
 Get Account ID via API
